@@ -5,6 +5,7 @@ Dans le cours d’OC informatique, nous avons décidé de construire et programm
 Le but principal du projet pour nous était de créer quelque chose d’original et complexe afin de mieux comprendre le fonctionnement des composants électroniques, des moteurs, des GPIO et de la programmation en Python afin de faire déplacer une voiture selon un chemin précis. Cela mélange le cours que nous avons fait avec Madame Zenak au premier semestre avec ce que nous avons appris ce semestre.
 
 Ce projet nous a permis d’apprendre à :
+
 1.connecter différents composants électroniques
 2.utiliser un driver moteur L298N 
 3.programmer les moteurs en Python 
