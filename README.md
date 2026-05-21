@@ -17,7 +17,45 @@ Ce projet nous a permis d’apprendre à :
 5.comprendre les bases de la robotique et de l’électronique
 
 Le projet est basé sur les notions vues au cours de l’année puis le cours d’introduction à l’électronique et à la robotique avec le Raspberry Pi Pico.  
-## C'est bien
-### Hello
+## Objectif du projet
+L’objectif de notre projet était de construire une voiture robotique capable :
 
-AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+1.d’avancer 
+
+2.de reculer 
+
+3.de tourner à gauche et à droite 
+
+4.de suivre un parcours programmé à l’avance. 
+
+Nous voulions également comprendre comment contrôler des moteurs grâce aux GPIO du Raspberry Pi Pico et au module L298N.  
+
+Notre projet s’inspire du fonctionnement du robot Thymio que nous avions programmé auparavant avec Madame Zenak. Dans ce premier projet, le robot utilisait des capteurs, des LEDs et des sons pour effectuer une séquence automatique.  
+## Répartition du travail
+Lily : branchements électroniques et les textes 
+Nikita : branchements électroniques et le code
+Ensemble: recherche d’informations et de matériels 
+## Matériel utilisé
+Pour construire la voiture robotique, nous avons utilisé plusieurs composants électroniques.  
+### Liste des composants
+1.Raspberry Pi Pico 
+
+2.Driver moteur L298N
+
+3.Breadboard
+
+4.Châssis 4 roues motrices
+
+5.4 moteurs DC
+
+6.Batterie / boîtier piles
+
+7.Fils Dupont
+
+8.Module d’alimentation
+
+9.Câble micro-USB
+### Utilité des composants
+
+
+
