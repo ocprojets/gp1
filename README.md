@@ -81,5 +81,6 @@ PWM:
 La technologie PWM permet de contrôler la vitesse des moteurs grâce au rapport cyclique du signal.  
 ## Schéma et connexions
 
+![Capture écran](./images/hello.png)
 
 
