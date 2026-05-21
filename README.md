@@ -7,9 +7,13 @@ Le but principal du projet pour nous était de créer quelque chose d’original
 Ce projet nous a permis d’apprendre à :
 
 1.connecter différents composants électroniques
+
 2.utiliser un driver moteur L298N 
+
 3.programmer les moteurs en Python 
+
 4.contrôler les déplacements de la voiture 
+
 5.comprendre les bases de la robotique et de l’électronique
 
 Le projet est basé sur les notions vues au cours de l’année puis le cours d’introduction à l’électronique et à la robotique avec le Raspberry Pi Pico.  
