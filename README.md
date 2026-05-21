@@ -60,5 +60,26 @@ Pour construire la voiture robotique, nous avons utilisé plusieurs composants �
 9.Câble micro-USB
 ### Utilité des composants
 
+Raspberry Pi Pico:
+
+Le Raspberry Pi Pico est le cerveau de la voiture. Il exécute le programme Python et envoie les instructions aux moteurs.  
+
+Driver moteur L298N:
+
+Le module L298N sert d’intermédiaire entre la carte Pico et les moteurs. Il permet d’alimenter les moteurs avec suffisamment de puissance.  
+
+Breadboard:
+
+La breadboard permet de connecter les composants sans devoir faire de soudure.  
+
+GPIO:
+
+Les GPIO permettent au Raspberry Pi Pico d’envoyer des signaux électriques aux moteurs. 
+
+PWM:
+
+La technologie PWM permet de contrôler la vitesse des moteurs grâce au rapport cyclique du signal.  
+## Schéma et connexions
+
 
 
