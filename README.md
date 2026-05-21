@@ -32,8 +32,11 @@ Nous voulions également comprendre comment contrôler des moteurs grâce aux GP
 
 Notre projet s’inspire du fonctionnement du robot Thymio que nous avions programmé auparavant avec Madame Zenak. Dans ce premier projet, le robot utilisait des capteurs, des LEDs et des sons pour effectuer une séquence automatique.  
 ## Répartition du travail
+
 Lily : branchements électroniques et les textes 
+
 Nikita : branchements électroniques et le code
+
 Ensemble: recherche d’informations et de matériels 
 ## Matériel utilisé
 Pour construire la voiture robotique, nous avons utilisé plusieurs composants électroniques.  
