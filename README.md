@@ -152,7 +152,10 @@ Le schéma de connexion:
 ![schema2](./images/IMG_4627.JPG)
 ![schema3](./images/IMG_4628.JPG)
 ## Code
-On vous a partager la video par mail dans notre drive car elle etait trop lourd pour mettre sur le site
+On vous a partagé la video par mail dans notre drive car elle etait trop lourd pour mettre sur le site
+
+voici notre code:
+
 ![Code](./images/code.jpg)
 ## Explication de code
 Le programme a été écrit en MicroPython.
@@ -242,10 +245,6 @@ Pico GP4 → IN3
 
 Pico GP5 → IN4
 
-Pico GP0 → ENA
-
-Pico GND → ENB
-
 Résumé schéma
 
 Pico GP2 ─── IN1     OUT1 ── moteurs gauche
@@ -255,10 +254,6 @@ Pico GP3 ─── IN2     OUT2 ── moteurs gauche
 Pico GP4 ─── IN3     OUT3 ── moteurs droite
 
 Pico GP5 ─── IN4     OUT4 ── moteurs droite
-
-Pico GP0─── ENA
-
-Pico GND─── ENB
 
 Pile 6V + ── L298N 12V
 
