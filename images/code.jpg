@@ -1,0 +1,39 @@
+from machine import Pin, PWM
+import time
+
+ENA = PWM(Pin(0))
+IN1 = Pin(4, Pin.OUT)
+IN2 = Pin(5, Pin.OUT)
+
+ENB = PWM(Pin(3))
+IN3 = Pin(6, Pin.OUT)
+IN4 = Pin(7, Pin.OUT)
+
+ENA.freq(1000)
+ENB.freq(1000)
+ENA.duty_u16(45000)
+ENB.duty_u16(45000)
+
+# Test moteur GAUCHE sens 1
+print("Moteur gauche sens 1")
+IN1.high(); IN2.low()
+IN3.low(); IN4.low()
+time.sleep(2)
+
+# Test moteur GAUCHE sens 2
+print("Moteur gauche sens 2")
+IN1.low(); IN2.high()
+IN3.low(); IN4.low()
+time.sleep(2)
+
+# Test moteur DROIT sens 1
+print("Moteur droit sens 1")
+IN1.low(); IN2.low()
+IN3.high(); IN4.low()
+time.sleep(2)
+
+# Test moteur DROIT sens 2
+print("Moteur droit sens 2")
+IN1.low(); IN2.low()
+IN3.low(); IN4.high()
+time.sleep(2)
