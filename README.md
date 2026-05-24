@@ -117,21 +117,36 @@ La technologie PWM permet de contrôler la vitesse des moteurs grâce au rapport
 
 Pour construire la voiture robotique, nous avons commencé par assembler le châssis.
 Nous avons d’abord vissé les supports du toit sur la plaque de base. Ensuite, nous avons fixé les supports des moteurs avant de visser les moteurs sur la structure principale.
+
 Après le montage mécanique, nous avons organisé les connexions des moteurs. Nous avons regroupé les fils rouges et noirs des moteurs de gauche par couleur, puis nous avons fait la même chose pour les moteurs de droite.
+
 Les branchements sur le module L298N ont été réalisés de la manière suivante :
-les fils rouges des moteurs de gauche ont été connectés à la sortie OUT1 ;
-les fils noirs des moteurs de gauche ont été connectés à la sortie OUT2 ;
-les fils rouges des moteurs de droite ont été connectés à la sortie OUT3 ;
-les fils noirs des moteurs de droite ont été connectés à la sortie OUT4.
+
+1.les fils rouges des moteurs de gauche ont été connectés à la sortie OUT1 
+
+2.les fils noirs des moteurs de gauche ont été connectés à la sortie OUT2 
+
+3.les fils rouges des moteurs de droite ont été connectés à la sortie OUT3 
+
+4.les fils noirs des moteurs de droite ont été connectés à la sortie OUT4.
+
 Ensuite, nous avons inséré les piles dans le boîtier d’alimentation et nous l’avons fixé au châssis avec des attaches zippées afin qu’il reste stable pendant les déplacements de la voiture.
 Après cela, nous avons connecté le boîtier à piles au module L298N………. Enfin, nous avons vissé le toit du châssis pour terminer l’assemblage.
+
 Les connexions utilisées correspondent au schéma étudié pendant le projet :
-GP0 → IN1
-GP1 → IN2
-GP2 → IN3
-GP3 → IN4
-GP4 → ENA
-GP5 → ENB
+
+GP2 → IN1
+
+GP3 → IN2
+
+GP4 → IN3
+
+GP5 → IN4
+
+GP0 → ENA
+
+GP3 → ENB
+
 Le schéma de connexion: 
  ![Schema pratique](./images/schema1.jpg)
 ## Code
