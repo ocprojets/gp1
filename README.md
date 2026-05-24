@@ -114,9 +114,31 @@ Les GPIO permettent au Raspberry Pi Pico d’envoyer des signaux électriques au
 La technologie PWM permet de contrôler la vitesse des moteurs grâce au rapport cyclique du signal.  
 ## Schéma et connexions
 ![Capture écran](./images/hello.png)
+
+Pour construire la voiture robotique, nous avons commencé par assembler le châssis.
+Nous avons d’abord vissé les supports du toit sur la plaque de base. Ensuite, nous avons fixé les supports des moteurs avant de visser les moteurs sur la structure principale.
+Après le montage mécanique, nous avons organisé les connexions des moteurs. Nous avons regroupé les fils rouges et noirs des moteurs de gauche par couleur, puis nous avons fait la même chose pour les moteurs de droite.
+Les branchements sur le module L298N ont été réalisés de la manière suivante :
+les fils rouges des moteurs de gauche ont été connectés à la sortie OUT1 ;
+les fils noirs des moteurs de gauche ont été connectés à la sortie OUT2 ;
+les fils rouges des moteurs de droite ont été connectés à la sortie OUT3 ;
+les fils noirs des moteurs de droite ont été connectés à la sortie OUT4.
+Ensuite, nous avons inséré les piles dans le boîtier d’alimentation et nous l’avons fixé au châssis avec des attaches zippées afin qu’il reste stable pendant les déplacements de la voiture.
+Après cela, nous avons connecté le boîtier à piles au module L298N………. Enfin, nous avons vissé le toit du châssis pour terminer l’assemblage.
+Les connexions utilisées correspondent au schéma étudié pendant le projet :
+GP0 → IN1
+GP1 → IN2
+GP2 → IN3
+GP3 → IN4
+GP4 → ENA
+GP5 → ENB
+Le schéma de connexion: 
+ ![Schema pratique](./images/schema1.jpg)
 ## Code
 ![Code](./images/code.jpg)
 ## Explication de code
+Le programme a été écrit en MicroPython.
+
 from machine import Pin, PWM = Importe les outils pour contrôler les pins et le PWM du Pico.
 import time = Importe l'outil pour faire des pauses.
 ENA = PWM(Pin(0)) = La pin 0 contrôle la vitesse du moteur gauche via PWM (signal qui pulse rapidement).
@@ -186,4 +208,52 @@ Pico GND─── ENB
 
 Pile 6V + ── L298N 12V
 Pile 6V - ── L298N GND
+## Difficultés rencontrées et solutions
+L’une des principales difficultés rencontrées pendant ce projet concernait les branchements électroniques. Au début, il était difficile de savoir exactement où connecter chaque composant pour que la voiture fonctionne correctement. Nous devions comprendre où brancher les moteurs, le Raspberry Pi Pico, le module L298N et l’alimentation sans faire d’erreur.
+
+Nous avions également peur d’endommager les composants électroniques en réalisant un mauvais branchement. Il fallait faire très attention à la polarité des fils, aux connexions GND et aux tensions utilisées afin de ne pas brûler le Raspberry Pi Pico ou le driver moteur. Grâce au cours, nous avons appris l’importance des pins d’alimentation, des GPIO et des connexions à la masse (GND).  
+
+La plus grande difficulté a été le branchement des batteries sur le module L298N. Nous ne savions pas au début comment connecter correctement le boîtier de piles au driver moteur pour alimenter les moteurs sans créer de court-circuit. Il faut savoir que notre boîtier de pile a été acheté tel quel et ne venait pas avec les câbles directement attachés dessus, ce qui rendait impossible la connexion entre le boîtier de pile et le L298N. Cette partie est très importante puisqu' elle sert à alimenter la voiture entière. Il n’y avait que quelques possibilités dont la soudure, ce que nous ne savions bien sûr pas faire. Nous avons finalement opté pour la solution suivante, nous avons coincé les câbles dans les entrées de la boîte de batterie afin qu’ils tiennent correctement, puis nous avons connecté le câble positif (+) sur l’entrée 12V/VIN du module L298N et le câble négatif (-) sur le GND du L298N. Grâce à cette solution, nous avons réussi à alimenter correctement le circuit et les moteurs de la voiture. (Merci beaucoup Monsieur Rordorf pour votre aide)
+
+Les problèmes concernant le code n’étaient pas nombreux comme on a eu l’aide de Claude, une IA experte en informatique. Bien sûr, il a fallu changer beaucoup de choses pour l’adapter à notre projet. Un des problèmes était qu’il n’était pas possible de vérifier le code sans connecter le Raspberry Pi à l’ordinateur car le module “machine” se trouve seulement installé dans le Pico. Puis l'autre probleme qu'on avait etait celui qu'on vous a expliquer dans les problems avec le program.
+## Comparaison avec le projet Thymio
+Ce projet était inspiré de notre ancien projet avec le robot Thymio.
+Dans le projet Thymio :
+le robot détectait des lignes noires 
+il changeait de couleur 
+il jouait des sons 
+il utilisait plusieurs états et variables pour gérer ses actions
+Grâce à cette première expérience, nous avons mieux compris :
+la logique de programmation 
+les variables d’état 
+la gestion des mouvements automatiques 
+l’organisation du code
+Le projet voiture était cependant plus difficile car nous devions aussi réaliser les branchements électroniques, créer un code plus complexe en prenant en compte les nouveaux composants et gérer l’alimentation des moteurs. 
+## Améliorations possibles
+Si nous avions plus de temps, nous aimerions :
+1.ajouter un module Bluetooth pour contrôler la voiture à distance 
+2.ajouter des LEDs
+3.trouver comment regler le code pour que ca marche exactement comme on voulais
+4.programmer une télécommande sur téléphone 
+5.rendre les déplacements plus précis 
+6.personnaliser davantage la voiture pour qu’il ressemble à Flash McQueen 
+6.faire un code plus elaboré
+## Conclusion
+Ce projet nous a permis de découvrir les bases de la robotique et de l’électronique avec le Raspberry Pi Pico.
+Nous avons appris à :
+connecter des composants
+programmer des moteurs 
+utiliser le PWM 
+comprendre le fonctionnement des GPIO 
+construire une voiture robotique complète
+
+Ce projet nous a également permis de développer notre logique de programmation, notre travail d’équipe et notre autonomie.
+Pour conclure, ce projet nous a permis de découvrir concrètement le monde de la robotique, de l’électronique et de la programmation avec le Raspberry Pi Pico. Grâce à la construction de cette voiture robotique, nous avons appris à connecter différents composants électroniques, à utiliser un module L298N, à programmer des moteurs en Python et à comprendre le fonctionnement des GPIO et du PWM.
+
+Même si nous avons rencontré plusieurs difficultés, notamment avec les branchements, l’alimentation des batteries et le fonctionnement des moteurs, nous avons réussi à trouver des solutions et à adapter notre projet pour qu’il fonctionne correctement. Ces problèmes nous ont permis d’apprendre à tester, corriger et améliorer notre travail étape par étape.
+
+Ce projet nous a également appris à travailler en équipe, à partager les tâches et à être patients face aux erreurs techniques. Malgré les difficultés rencontrées, nous sommes contents du résultat final et fiers d’avoir réussi à construire et programmer notre propre voiture robotique.
+
+Enfin, ce projet nous a donné envie d’aller plus loin dans la robotique et la programmation en ajoutant plus tard des capteurs, un contrôle Bluetooth ou encore des mouvements plus complexes.
+
 
