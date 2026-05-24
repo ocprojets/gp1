@@ -148,7 +148,9 @@ GP0 → ENA
 GP3 → ENB
 
 Le schéma de connexion: 
- ![Schema pratique](./images/schema1.jpg)
+![schema1](./images/IMG_4626.jpeg)
+![schema2](./images/IMG_4627.JPG)
+![schema3](./images/IMG_4628.JPG)
 ## Code
 ![Code](./images/code.jpg)
 ## Explication de code
