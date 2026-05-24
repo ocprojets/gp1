@@ -152,6 +152,7 @@ Le schéma de connexion:
 ![schema2](./images/IMG_4627.JPG)
 ![schema3](./images/IMG_4628.JPG)
 ## Code
+On vous a partager la video par mail dans notre drive car elle etait trop lourd pour mettre sur le site
 ![Code](./images/code.jpg)
 ## Explication de code
 Le programme a été écrit en MicroPython.
