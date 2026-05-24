@@ -82,5 +82,6 @@ La technologie PWM permet de contrôler la vitesse des moteurs grâce au rapport
 ## Schéma et connexions
 ![Capture écran](./images/hello.png)
 ## Code
-![Capture écran](./images/code.jpg)
+
+![Code](./images/code.jpg)
 
